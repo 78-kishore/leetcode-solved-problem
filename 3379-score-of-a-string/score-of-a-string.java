@@ -1,5 +1,7 @@
-class Solution {
-    public int scoreOfString(String s) {
+class Solution
+ {
+    public int scoreOfString(String s) 
+    {
         int ans=0;
         if(s.length()==0)
         {
