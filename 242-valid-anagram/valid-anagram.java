@@ -7,8 +7,8 @@ class Solution {
       for(char ch:t.toCharArray()){
         arr[ch-'a']--;
       }
-      for(int i=0;i<26;i++){
-        if(arr[i]!=0){
+      for(int count:arr){
+        if(count!=0){
             return false;
         }
       }
