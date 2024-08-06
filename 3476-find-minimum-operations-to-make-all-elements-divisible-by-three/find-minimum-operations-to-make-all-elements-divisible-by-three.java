@@ -8,11 +8,6 @@ class Solution
        {
         if(nums[i]%3!=0)
           a++;
-       // else
-       //    if((nums[i]-1)%3==0)
-         //   a++;
-           //else if((nums[i]+1)%3==0)
-            //a++;
        } 
        return a;   
     }
