@@ -6,7 +6,8 @@ class Solution
        int a=0;
        for(int i=0;i<n;i++)
        {
-          if(nums[i]<k)
+          if(nums
+          [i]<k)
              a++;
        }
      return a; 
