@@ -12,13 +12,16 @@ class Solution
         
         Arrays.sort(s,(n,k) -> (k+n).compareTo(n+k));
 
-        StringBuilder result = new StringBuilder();
+        StringBuilder lnum = new StringBuilder();
         
         for(int i=0;i<nn;i++)
         {
-            result.append(s[i]);
+            lnum.append(s[i]);
         }
 
-        return result.charAt(0)=='0'?"0" : result.toString();
+        if(lnum.charAt(0)=='0') 
+           return "0";
+        else
+           return lnum.toString();
     }
 }
