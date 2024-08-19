@@ -10,10 +10,9 @@ class Solution
     {
         int n=s.length();
         String s1="";
-        char c[]=s.toCharArray();
         for(int i=0;i<n;i++)
         {
-            char c1=c[i];
+            char c1=s.charAt(i);
             if(c1=='i')
                 s1=isReverse(s1);
             else 
