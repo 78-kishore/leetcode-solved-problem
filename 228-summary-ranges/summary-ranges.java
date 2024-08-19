@@ -7,7 +7,7 @@ class Solution
        String s1="";
        if(n==0)
          return li;
-        else if(n==1)
+       else if(n==1)
         {
             s1=""+nums[0];
             li.add(s1);
