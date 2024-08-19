@@ -3,21 +3,32 @@ class Solution
     public int singleNumber(int[] nums)
     {
         int n=nums.length;
-        int element=0;
-        for(int i=0;i<n;i++)
+        int a=0,i=0,j=0;
+
+        while(i<n)
         {
-            int a=0;
-            for(int j=0;j<n;j++)
+            if(nums[i]==nums[j])
+                a++;
+            
+            if(j==n-1)
             {
-                if(nums[i]==nums[j])
-                   a++;
+                if(a==1)
+                {
+                    a=i;
+                    break;
+                }
+                else
+                {
+                    a=0;
+                    i++;
+                    j=0;
+                    continue;
+                }
             }
-            if(a==1)
-               {
-                element=i;
-                break;
-               }
+            else
+                j++;
         }
-        return nums[element];
+        return nums[a];
     }
+       
 }
