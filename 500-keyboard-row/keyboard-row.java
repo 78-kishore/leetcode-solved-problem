@@ -1,5 +1,6 @@
 class Solution 
 {
+    
     public static boolean check(String s)
     {
         String one="QWERTYUIOPpoiuytrewq";
@@ -23,6 +24,7 @@ class Solution
         else
            return false;
     }
+
     public String[] findWords(String[] words) 
     {
 
