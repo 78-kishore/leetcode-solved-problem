@@ -12,18 +12,8 @@ class Solution
             String s1=""+s.charAt(i);
             if(one.contains(s1))
                a++;
-        }
-
-        for(int i=0;i<s.length();i++)
-        {
-            String s1=""+s.charAt(i);
             if(two.contains(s1))
                b++;
-        }
-
-        for(int i=0;i<s.length();i++)
-        {
-            String s1=""+s.charAt(i);
             if(three.contains(s1))
                c++;
         }
